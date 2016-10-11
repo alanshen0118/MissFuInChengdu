@@ -1,0 +1,32 @@
+<!--index.wxml-->
+
+<template name="awesome-Item">
+  <view class="flex-item">
+    <image class="awesomeFood-image" src="{{imgUrl}}" />
+    <text class="awesomeFood-name">{{name}}</text>
+    <text class="awesomeFood-desc">{{desc}}</text>
+  </view>
+</template>
+<view>
+  <swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for-items="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image"/>
+    </swiper-item>
+  </block>
+  </swiper>
+</view>
+<view class="section-Header">
+  <image id='awesomeFood-Icon' src='{{awesomeFoodIconUrl}}' />
+  <text class="awesomeFood-title">{{awesomeTitle}}</text>
+</view>
+<view id="container" bindtap="viewTap">
+  <view class="awesomeFood-collectionView">
+    <block wx:for-items="{{awesomeFoods}}">
+      <!--<image src="{{item.imgUrl}}" />-->
+      <template is="awesome-Item" data="{{...item}}" />
+    </block>
+  </view>
+</view>
+

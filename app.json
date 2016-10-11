@@ -1,0 +1,37 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/order/order",
+    "pages/personal/personal"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "black",
+    "navigationBarTitleText": "付小姐在成都",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": "true"
+  },
+  "tabBar": {
+    "color": "#fff",
+    "selectedColor": "#eb4f38",
+    "backgroundColor": "black",
+    "borderStyle": "white",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "images/home.png",
+      "selectedIconPath": "images/home_Selected.png"
+    }, {
+      "pagePath": "pages/order/order",
+      "text": "点菜",
+      "iconPath": "images/order.png",
+      "selectedIconPath": "images/order_Selected.png"
+    }, {
+      "pagePath": "pages/personal/personal",
+      "text": "个人中心",
+      "iconPath": "images/mine.png",
+      "selectedIconPath": "images/mine_Selected.png"
+    }]
+  }
+}
