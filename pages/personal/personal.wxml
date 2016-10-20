@@ -1,6 +1,55 @@
-<view class="container">
-  <view  bindtap="bindViewTap" class="userinfo">
-    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-  </view>
-</view>
+<!--<view id="personal-container-view">-->
+    <view id="personal-column-topView" class="{{columnFloatTop}}_view">
+        <view class="personal-column-cell">
+            <text class="personal-column-title">{{coupons.length}}</text>
+            <text class="personal-column-value">优惠券</text>
+        </view>
+        <text class="vertical-separate-line"></text>
+        <view class="personal-column-cell">
+            <text class="personal-column-title">{{collects.length}}</text>
+            <text class="personal-column-value">收藏</text>
+        </view>
+        <text class="vertical-separate-line"></text>
+        <view class="personal-column-cell">
+            <text class="personal-column-title">{{records.length}}</text>
+            <text class="personal-column-value">历史记录</text>
+        </view>
+        <text class="vertical-separate-line"></text>
+        <view class="personal-column-cell">
+            <text class="personal-column-title">{{balance}}</text>
+            <text class="personal-column-value">余额</text>
+        </view>
+    </view>
+    <scroll-view id="personal-scroll-view" scroll-y="true" bindscrolltoupper="personal_tableview_scrollToTop" bindscrolltolower="personal_tableview_scrollToBottom" bindscroll="personal_tableview_scroll">
+        <view class="navigation-extension-view">
+        </view>
+        <view id="personal-avatar-view">
+            <image class="personal-avatar-image" src="{{userInfo.avatarUrl}}"></image>
+            <text class="personal-nickname-text">{{userInfo.nickName}}</text>
+        </view>
+
+        <view id="personal-column-view" class="{{columnFloat}}_view">
+            <view class="personal-column-cell">
+                <text class="personal-column-title">{{coupons.length}}</text>
+                <text class="personal-column-value">优惠券</text>
+            </view>
+            <text class="vertical-separate-line"></text>
+            <view class="personal-column-cell">
+                <text class="personal-column-title">{{collects.length}}</text>
+                <text class="personal-column-value">收藏</text>
+            </view>
+            <text class="vertical-separate-line"></text>
+            <view class="personal-column-cell">
+                <text class="personal-column-title">{{records.length}}</text>
+                <text class="personal-column-value">历史记录</text>
+            </view>
+            <text class="vertical-separate-line"></text>
+            <view class="personal-column-cell">
+                <text class="personal-column-title">{{balance}}</text>
+                <text class="personal-column-value">余额</text>
+            </view>
+        </view>
+
+        <view class="others"></view>
+    </scroll-view>
+<!--</view>-->

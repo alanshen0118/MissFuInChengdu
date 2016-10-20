@@ -1,8 +1,6 @@
 //index.js
 Page({
   data: {
-    // motto: 'Hello World',
-    // userInfo: {},
     imgUrls: [
       'http://www.fuxiaojie.cn/banner/banner1.jpg',
       'http://www.fuxiaojie.cn/banner/banner2.jpg',

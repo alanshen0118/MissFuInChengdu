@@ -1,16 +1,95 @@
-.userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+#personal-container-view {
+
 }
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+#personal-scroll-view {
+    height: 100%;
+    width: 100%;
 }
 
-.userinfo-nickname {
-  color: #aaa;
+.navigation-extension-view {
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 130rpx;
+    z-index: -1;
+}
+
+#personal-avatar-view {
+    margin: 0rpx 0rpx 40rpx 20rpx;
+}
+
+.personal-avatar-image {
+    margin: 60rpx 10rpx 20rpx 10rpx;
+    width: 120rpx;
+    height: 120rpx;
+    border-radius: 60rpx;
+}
+
+.personal-nickname-text {
+    
+}
+
+#personal-column-view {
+    background-color: #dddddd;
+    display:flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    margin-top: 30rpx;
+    height: 160rpx;
+    width: 100%;
+}
+
+.hidden_view {
+    visibility: hidden;
+}
+
+.visible_view {
+    visibility: visible;
+}
+
+#personal-column-topView {
+    background-color: #dddddd;
+    position: absolute;
+    display:flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    height: 160rpx;
+    width: 100%;
+    z-index: 9999;
+}
+
+.vertical-separate-line {
+    background-color: white;
+    width: 2rpx;
+    height: 100rpx;
+    align-self: center;
+}
+
+.personal-column-cell {
+    display: inline-block;
+    width: 24%;
+    align-self: center;
+}
+
+.personal-column-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 30rpx;
+}
+
+.personal-column-value {
+    display: block;
+    margin-top: 16rpx;
+    width: 100%;
+    text-align: center;
+    font-size: 28rpx;
+}
+
+.others {
+    height: 1300rpx;
+    background-color: sandybrown;
 }
